@@ -1,0 +1,18 @@
+{
+    "categories": [
+        {
+            "idCategory": "01",
+            "nameCategory": "Beasts",
+            "monsters": [
+                "Bears", "Dogs", "Panthers", "Wargs", "Wolves"
+            ]
+        },
+        {
+            "idCategory": "02",
+            "nameCategory": "Cursed Ones",
+            "monsters": [
+                "Berserkers", "Botchlings", "Lubberkin", "Ulfhedinn", "Werewolves"
+            ]
+        }
+    ]
+}

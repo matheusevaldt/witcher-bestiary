@@ -1,25 +1,39 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+// https://witcher.fandom.com/wiki/The_Witcher_3_bestiary
+// Importing components.
+import Header from './components/Header/Header';
+import Categories from './components/Categories/Categories';
+import Monster from './components/Monster/Monster';
 
 function App() {
+
+  const [categories, setCategories] = useState([]);
+  const [monsterData, setMonsterData] = useState([]);
+  const [monsterIsBeingDisplayed, setMonsterIsBeingDisplayed] = useState(false);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      {
+        !monsterIsBeingDisplayed &&
+        <Categories 
+          categories={categories} setCategories={setCategories} 
+          monsterData={monsterData} setMonsterData={setMonsterData}
+          monsterIsBeingDisplayed={monsterIsBeingDisplayed} setMonsterIsBeingDisplayed={setMonsterIsBeingDisplayed}
+        />
+      }
+      {
+        monsterIsBeingDisplayed &&
+        <Monster 
+          monsterData={monsterData}
+          // setMonsterData={setMonsterData}
+          setMonsterIsBeingDisplayed={setMonsterIsBeingDisplayed}
+        />
+      }
     </div>
   );
+
 }
 
 export default App;

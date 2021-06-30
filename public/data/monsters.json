@@ -1,0 +1,14 @@
+{
+    "monsters": [
+        {
+            "idMonster": "Bears",
+            "nameMonster": "Bear",
+            "description": "Bears are generally found far from human habitation, either in the high mountains or in the deep woods."
+        },
+        {
+            "idMonster": "Dogs",
+            "nameMonster": "Dog",
+            "description": "It is fairly common knowledge what a dog is. Generally speaking a dog would not be a target for a witcher."
+        }
+    ]
+}

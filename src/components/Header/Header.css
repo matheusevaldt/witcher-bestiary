@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
+
+.header-container {
+    width: 100%;
+    text-align: center;
+    margin: 40px auto;
+}
+
+.header-container h1 {
+    position: relative;
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-weight: 400;
+    font-size: 2.2em;
+    line-height: 1.1em;
+    color: #fff;
+}
+
+.header-container h1::before {
+    position: absolute;
+    left: 50%;
+    top: -30px;
+    transform: translateX(-50%);
+    content: '';
+    background-image: url('../../assets/images/header-image.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    width: 145px;
+    height: 145px;
+    opacity: 0.6;
+    z-index: -1;
+}
