@@ -16,20 +16,16 @@ function App() {
     <div className="App">
       <Header />
       {
-        !monsterIsBeingDisplayed &&
+        !monsterIsBeingDisplayed ?
         <Categories 
           categories={categories} setCategories={setCategories} 
           monsterData={monsterData} setMonsterData={setMonsterData}
           monsterIsBeingDisplayed={monsterIsBeingDisplayed} setMonsterIsBeingDisplayed={setMonsterIsBeingDisplayed}
-        />
-      }
-      {
-        monsterIsBeingDisplayed &&
-        <Monster 
-          monsterData={monsterData}
-          // setMonsterData={setMonsterData}
-          setMonsterIsBeingDisplayed={setMonsterIsBeingDisplayed}
-        />
+        /> 
+        : <Monster 
+            monsterData={monsterData}
+            setMonsterIsBeingDisplayed={setMonsterIsBeingDisplayed}
+          />
       }
     </div>
   );

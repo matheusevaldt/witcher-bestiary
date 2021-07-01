@@ -3,14 +3,14 @@
 .header-container {
     width: 100%;
     text-align: center;
-    margin: 40px auto;
+    margin: 40px auto 60px auto;
 }
 
 .header-container h1 {
     position: relative;
     font-family: 'Sedgwick Ave Display', cursive;
     font-weight: 400;
-    font-size: 2.2em;
+    font-size: 2.3em;
     line-height: 1.1em;
     color: #fff;
 }

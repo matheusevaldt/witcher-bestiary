@@ -1,0 +1,47 @@
+.category-container {
+    margin-bottom: 25px;
+}
+
+.category-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.category-header h1 {
+    font-size: 1.3em;
+}
+
+.category-header button {
+    width: 50px;
+    align-self: stretch;
+    font-size: 1.1em;
+    text-align: right;
+    background-color: transparent;
+    border: none;
+    color: var(--red-color-with-opacity);
+}
+
+.category-header button i {
+    pointer-events: none;
+}
+
+.category-monsters {
+    overflow: hidden;
+}
+
+.category-monsters li {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 3px 0;
+}
+
+.category-monsters li span {
+    margin: 0 10px 0 1px;
+    background-color: var(--red-color-with-opacity);
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+}
