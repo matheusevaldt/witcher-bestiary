@@ -3,7 +3,7 @@
 .header-container {
     width: 100%;
     text-align: center;
-    margin: 40px auto 60px auto;
+    margin: 40px auto 70px auto;
 }
 
 .header-container h1 {
@@ -27,6 +27,6 @@
     background-position: center center;
     width: 145px;
     height: 145px;
-    opacity: 0.6;
+    /* opacity: 0.6; */
     z-index: -1;
 }

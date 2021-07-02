@@ -20,7 +20,7 @@
     text-align: right;
     background-color: transparent;
     border: none;
-    color: var(--red-color-with-opacity);
+    color: var(--white-color-with-opacity);
 }
 
 .category-header button i {
@@ -34,13 +34,12 @@
 .category-monsters li {
     display: flex;
     align-items: center;
-    list-style: none;
     padding: 3px 0;
 }
 
 .category-monsters li span {
     margin: 0 10px 0 1px;
-    background-color: var(--red-color-with-opacity);
+    background-color: var(--red-color);
     height: 5px;
     width: 5px;
     border-radius: 50%;

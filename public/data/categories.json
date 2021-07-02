@@ -1,17 +1,134 @@
 {
     "categories": [
         {
-            "idCategory": "01",
+            "idCategory": "1",
             "nameCategory": "Beasts",
             "monsters": [
-                "Bears", "Dogs", "Panthers", "Wargs", "Wolves"
+                "Bears", 
+                "Dogs", 
+                "Panthers", 
+                "Wargs", 
+                "Wolves"
             ]
         },
         {
-            "idCategory": "02",
+            "idCategory": "2",
             "nameCategory": "Cursed Ones",
             "monsters": [
-                "Berserkers", "Botchlings", "Lubberkin", "Ulfhedinn", "Werewolves"
+                "Berserkers", 
+                "Botchlings", 
+                "Lubberkin", 
+                "Ulfhedinn", 
+                "Werewolves"
+            ]
+        },
+        {
+            "idCategory": "3",
+            "nameCategory": "Draconids",
+            "monsters": [
+                "Basilisks", 
+                "Cockatrices", 
+                "Forktails", 
+                "Royal Wyverns", 
+                "Slyzards", 
+                "Wyverns"
+            ]
+        },
+        {
+            "idCategory": "4",
+            "nameCategory": "Elementa",
+            "monsters": [
+                "Djinn", 
+                "Earth Elemental", 
+                "Fire Elemental", 
+                "Gargoyle", 
+                "Golem", 
+                "Ice Elemental"
+            ]
+        },
+        {
+            "idCategory": "5",
+            "nameCategory": "Hybrids",
+            "monsters": [
+                "Ekhidna", 
+                "Erynia", 
+                "Griffin", 
+                "Harpy", 
+                "Siren", 
+                "Succubus"
+            ]
+        },
+        {
+            "idCategory": "6",
+            "nameCategory": "Insectoids",
+            "monsters": [
+                "Arachasae", 
+                "Armored Arachasae", 
+                "Endrega Drones", 
+                "Endrega Warriors", 
+                "Giant Centipedes", 
+                "Kikomore", 
+                "Kikomore Workers", 
+                "Venomous Arachasae"
+            ]
+        },
+        {
+            "idCategory": "7",
+            "nameCategory": "Necrophages",
+            "monsters": [
+                "Alghoul",
+                "Devourer",
+                "Drowner",
+                "Drowned Dead",
+                "Foglet",
+                "Ghoul",
+                "Grave Hag",
+                "Mucknixer",
+                "Rotfiend",
+                "Water Hag"
+            ]
+        },
+        {
+            "idCategory": "8",
+            "nameCategory": "Ogroids",
+            "monsters": [
+                "Cyclopses",
+                "Ice Giants",
+                "Ice Trolls",
+                "Nekkers",
+                "Rock Trolls"
+            ]
+        },
+        {
+            "idCategory": "9",
+            "nameCategory": "Relicts",
+            "monsters": [
+                "Chorts",
+                "Dopplers",
+                "Fiends",
+                "Leshens",
+                "Spriggans"
+            ]
+        },
+        {
+            "idCategory": "10",
+            "nameCategory": "Specters",
+            "monsters": [
+                "Hym",
+                "Nightwraith",
+                "Noonwraith", 
+                "Wraith"
+            ]
+        },
+        {
+            "idCategory": "11",
+            "nameCategory": "Vampires",
+            "monsters": [
+                "Alp",
+                "Bruxa",
+                "Ekimmara",
+                "Higher Vampire",
+                "Katakan"
             ]
         }
     ]
