@@ -1,16 +1,28 @@
-import React, { useEffect } from 'react';
+import React from 'react';
+import './Monster.css';
 
-const Monster = ({ monsterData, setMonsterIsBeingDisplayed }) => {
+const Monster = ({ currentMonster, setMonsterIsBeingDisplayed }) => {
 
-    console.log('aaaaaaaa')
-    console.log(monsterData);
-    console.log('aaaaaaaa')
+    const data = currentMonster[0];
 
     return(
         <div className='monster-container'>
             <button onClick={() => setMonsterIsBeingDisplayed(false)}>RETURN TO HOMEPAGE</button>
-            monster name: {monsterData[0].nameMonster} <br />
-            monster description: {monsterData[0].description}
+            <p>Monster name: {data.name}</p>
+            <p>Monster first information: <br />
+                {data.information[0]}
+            </p>
+            <p>Monster second information: <br />
+                {data.information[1]}
+            </p>
+            <p>
+                Monster third information: <br/> 
+                {data.information[2]}
+            </p>
+            <p>Monster image #1</p>
+            <img src={data.images[0]} alt='' />
+            <p>Monster image #2</p>
+            <img src={data.images[1]} alt='' />
         </div>
     );
 

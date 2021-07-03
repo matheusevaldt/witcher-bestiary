@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 import './Categories.css';
 
-import synopsisImage from '../../assets/images/synopsis-image.png'
+import synopsisImage from '../../assets/images/synopsis-image.png';
 import Category from '../Category/Category';
 
-const Categories = ({ categories, setCategories, monsterData, setMonsterData, monsterIsBeingDisplayed, setMonsterIsBeingDisplayed }) => {
+const Categories = ({ categories, setCategories, currentMonster, setCurrentMonster, monsterIsBeingDisplayed, setMonsterIsBeingDisplayed }) => {
     
     const fetchCategories = () => {
         fetch('data/categories.json')
@@ -47,8 +47,8 @@ const Categories = ({ categories, setCategories, monsterData, setMonsterData, mo
                             category={category}
                             nameCategory={category.nameCategory}
                             monsters={category.monsters}
-                            monsterData={monsterData}
-                            setMonsterData={setMonsterData}
+                            currentMonster={currentMonster}
+                            setCurrentMonster={setCurrentMonster}
                             monsterIsBeingDisplayed={monsterIsBeingDisplayed}
                             setMonsterIsBeingDisplayed={setMonsterIsBeingDisplayed}
                             key={category.idCategory}

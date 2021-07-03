@@ -9,7 +9,7 @@ import Monster from './components/Monster/Monster';
 function App() {
 
   const [categories, setCategories] = useState([]);
-  const [monsterData, setMonsterData] = useState([]);
+  const [currentMonster, setCurrentMonster] = useState([]);
   const [monsterIsBeingDisplayed, setMonsterIsBeingDisplayed] = useState(false);
 
   return (
@@ -19,11 +19,11 @@ function App() {
         !monsterIsBeingDisplayed ?
         <Categories 
           categories={categories} setCategories={setCategories} 
-          monsterData={monsterData} setMonsterData={setMonsterData}
+          currentMonster={currentMonster} setCurrentMonster={setCurrentMonster}
           monsterIsBeingDisplayed={monsterIsBeingDisplayed} setMonsterIsBeingDisplayed={setMonsterIsBeingDisplayed}
         /> 
         : <Monster 
-            monsterData={monsterData}
+            currentMonster={currentMonster}
             setMonsterIsBeingDisplayed={setMonsterIsBeingDisplayed}
           />
       }

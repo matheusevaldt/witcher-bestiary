@@ -2,18 +2,17 @@ import React from 'react';
 import './Category.css';
 
 import Monster from '../Monster/Monster';
+import { monsters_data } from '../Monster/monsters_data.js';
 
-const Category = ({ category, nameCategory, monsters, monsterData, setMonsterData, monsterIsBeingDisplayed, setMonsterIsBeingDisplayed }) => {
+const Category = ({ category, nameCategory, monsters, currentMonster, setCurrentMonster, monsterIsBeingDisplayed, setMonsterIsBeingDisplayed }) => {
 
-    const fetchMonsterData = async (event) => {
-        const monstersResponse = await fetch('data/monsters.json');
-        const monstersRawData = await monstersResponse.json();
-        let monstersData = monstersRawData.monsters;
-        setMonsterData(monstersData.filter(monster => monster.idMonster === event.target.id));
+    const fetchMonsterData = (event) => {
+        const selectedMonster = monsters_data.filter(monster => monster.id === event.target.id);
+        setCurrentMonster(selectedMonster);
         setMonsterIsBeingDisplayed(true);
-        <Monster 
-            monsterData={monsterData}
-            setMonsterIsBeingDisplayed={setMonsterIsBeingDisplayed} 
+        <Monster
+            currentMonster={currentMonster}
+            setMonsterIsBeingDisplayed={setMonsterIsBeingDisplayed}
         />
     };
 
