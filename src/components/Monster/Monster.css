@@ -1,8 +1,41 @@
-.abv {
-    margin-bottom: 10px;
-    color: red;
+
+.monster-header {
+    /* outline: 1px solid red; */
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-p {
-    margin-bottom: 5px;
+.monster-header img {
+    max-width: 90%;
+    /* outline: 1px solid blue; */
+}
+
+.monster-header h1 {
+    font-size: 1.4em;
+}
+
+.monster-information p {
+    line-height: 1.6;
+    text-indent: 20px;
+}
+
+.monster-quote {
+    margin: 20px 0;
+    padding: 25px 20px;
+    background-color: rgb(10, 16, 27);
+    border-radius: 15px;
+}
+
+.monster-quote blockquote {
+    font-style: italic;
+    line-height: 1.5;
+}
+
+.monster-quote figcaption {
+    margin-top: 10px;
+}
+
+.monster-information img:last-of-type {
+    max-width: 100%;
+    margin: 20px 0;
 }
