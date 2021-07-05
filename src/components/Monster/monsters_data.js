@@ -5,8 +5,6 @@ import beasts_dog02_image from '../../assets/images/monsters/beasts_dog_02.png';
 import beasts_panther01_image from '../../assets/images/monsters/beasts_panther_01.png';
 import beasts_panther02_image from '../../assets/images/monsters/beasts_panther_02.jpg';
 
-// add 'combat tactics' and 'references'
-
 export const monsters_data = [
     {
         "id": "Bears",
@@ -20,9 +18,21 @@ export const monsters_data = [
             `Know that ditty about the bear "climbing the mountain, to see what he could see?" Biggest load of rubbish I've ever heard. When a bear climbs a mountain, it's not to see. It's to hunt. To kill.`,
             "– Jahne Oldak, royal huntsman"
         ],
+        "tactics": [
+            "Bears possess great vitality, amazing strength and are quick to anger if you find yourself within their territory. It is best to avoid a head on attack with a bear, try and dodge the swipes of their claws and cut at their flanks.",
+            "The signs Igni and Yrden are not necessarily weaknesses, however they do have their uses when going up against a bear. Igni can be used to light the bear on fire, which will temporarily stun it and allow you to move in for flanking strikes. Yrden can be used to slow the bear down just enough to make it easier on you to evade their paws.",
+            "Axii is a perfect choice against a bear since bears are almost always found alone. One cast and it's stunned, letting you get in a couple of good hits before it counterattacks."
+        ],
         "images": [
             beasts_bear01_image,
             beasts_bear02_image
+        ],
+        "references": [
+            {
+                "id": "1",
+                "reference": "Bear | Witcher Wiki",
+                "link": "https://witcher.fandom.com/wiki/Bear"
+            }
         ]
     },
     {

@@ -4,21 +4,15 @@ import './Monster.css';
 const Monster = ({ currentMonster, setMonsterIsBeingDisplayed }) => {
 
     const data = currentMonster[0];
-    console.log(data);
+    useEffect(() => window.scrollTo(0, 0), []);
 
-    useEffect(() => {
-        window.scrollTo(0,0);
-     }, [])
-
-    return(
+    return (
         <div className='monster-container'>
-            {/* <button onClick={() => setMonsterIsBeingDisplayed(false)}>RETURN TO HOMEPAGE</button> */}
-
+            <button className='button-homepage' onClick={() => setMonsterIsBeingDisplayed(false)}>&larr; Homepage</button>
             <div className='monster-header'>
                 <img src={data.images[0]} alt='' />
                 <h1>{data.name}</h1>
             </div>
-
             <div className='monster-information'>
                 <p>{data.information[0]}</p>
                 <figure className='monster-quote'>
@@ -33,31 +27,33 @@ const Monster = ({ currentMonster, setMonsterIsBeingDisplayed }) => {
                 <img src={data.images[1]} alt='' />
                 <p>{data.information[2]}</p>
             </div>
-
-
-
-
-
-
-
-
-
-
-            {/* <p>Monster name: {data.name}</p>
-            <p>Monster first information: <br />
-                {data.information[0]}
-            </p>
-            <p>Monster second information: <br />
-                {data.information[1]}
-            </p>
-            <p>
-                Monster third information: <br/> 
-                {data.information[2]}
-            </p>
-            <p>Monster image #1</p>
-            <img src={data.images[0]} alt='' />
-            <p>Monster image #2</p>
-            <img src={data.images[1]} alt='' /> */}
+            {
+                data.tactics.length !== 0 ?
+                <div className='monster-tactics'>
+                    <h1>Combat tactics</h1>
+                    {
+                        Object.entries(data.tactics).map(tactic => {
+                            const [key, paragraph] = tactic;
+                            return <p key={key}>{paragraph}</p>
+                        })
+                    }
+                </div> 
+                : ''
+            }
+            <div className='monster-references'>
+                <h1>References</h1>
+                <ul>
+                    {
+                        data.references.map(reference => {
+                            return <li key={reference.id}>
+                                <a href={reference.link}>
+                                    <span>{reference.id}.</span> {reference.reference}
+                                </a>
+                            </li>
+                        })
+                    }
+                </ul>
+            </div>
         </div>
     );
 

@@ -6,6 +6,8 @@ import Header from './components/Header/Header';
 import Categories from './components/Categories/Categories';
 import Monster from './components/Monster/Monster';
 
+// Fix scroll when rendering a monster
+
 function App() {
 
   const [categories, setCategories] = useState([]);
@@ -27,6 +29,9 @@ function App() {
             setMonsterIsBeingDisplayed={setMonsterIsBeingDisplayed}
           />
       }
+      <div className='scroll-top'>
+        <i className='fas fa-arrow-alt-circle-up' onClick={() => window.scroll({top: 0, behavior: 'smooth'})}></i>
+      </div>
     </div>
   );
 
