@@ -7,8 +7,8 @@
                 "Bears", 
                 "Dogs", 
                 "Panthers", 
-                "Wargs", 
-                "Wolves"
+                "Wolves", 
+                "Wild Boars"
             ]
         },
         {
@@ -16,9 +16,8 @@
             "nameCategory": "Cursed Ones",
             "monsters": [
                 "Berserkers", 
-                "Botchlings", 
-                "Lubberkin", 
-                "Ulfhedinn", 
+                "Botchlings",
+                "Ulfhedinns", 
                 "Werewolves"
             ]
         },

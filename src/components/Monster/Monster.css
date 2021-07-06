@@ -41,15 +41,18 @@
 .monster-quote blockquote {
     font-style: italic;
     line-height: 1.5;
+    white-space: pre-line;
 }
 
 .monster-quote figcaption {
     margin-top: 10px;
+    line-height: 1.5;
 }
 
 .monster-information img:last-of-type {
     max-width: 100%;
-    margin: 20px 0;
+    display: block;
+    margin: 20px auto;
 }
 
 .monster-tactics,

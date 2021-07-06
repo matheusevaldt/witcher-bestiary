@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import './App.css';
-// https://witcher.fandom.com/wiki/The_Witcher_3_bestiary
+
 // Importing components.
 import Header from './components/Header/Header';
 import Categories from './components/Categories/Categories';
 import Monster from './components/Monster/Monster';
 
+// TO-DOS
 // Fix scroll when rendering a monster
+// Add CSS to the monster's 2nd image
 
 function App() {
 
