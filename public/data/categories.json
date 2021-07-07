@@ -4,33 +4,34 @@
             "idCategory": "1",
             "nameCategory": "Beasts",
             "monsters": [
-                "Bears", 
-                "Dogs", 
-                "Panthers", 
-                "Wolves", 
-                "Wild Boars"
+                "Bear", 
+                "Dog", 
+                "Panther", 
+                "Wild Boar", 
+                "Wolf"                
             ]
         },
         {
             "idCategory": "2",
             "nameCategory": "Cursed Ones",
             "monsters": [
-                "Berserkers", 
-                "Botchlings",
-                "Ulfhedinns", 
-                "Werewolves"
+                "Archespore",
+                "Berserker", 
+                "Botchling",
+                "Ulfhedinn", 
+                "Werewolf"
             ]
         },
         {
             "idCategory": "3",
             "nameCategory": "Draconids",
             "monsters": [
-                "Basilisks", 
-                "Cockatrices", 
-                "Forktails", 
-                "Royal Wyverns", 
-                "Slyzards", 
-                "Wyverns"
+                "Basilisk", 
+                "Cockatrice", 
+                "Forktail", 
+                "Royal Wyvern", 
+                "Slyzard", 
+                "Wyvern"
             ]
         },
         {

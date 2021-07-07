@@ -8,6 +8,8 @@ import beasts_wolf01_image from '../../assets/images/monsters/beasts_wolf_01.png
 import beasts_wolf02_image from '../../assets/images/monsters/beasts_wolf_02.jpg';
 import beasts_wildBoar01_image from '../../assets/images/monsters/beasts_wild_boar_01.png';
 import beasts_wildBoar02_image from '../../assets/images/monsters/beasts_wild_boar_02.jpg';
+import cursedOnes_archespore01_image from '../../assets/images/monsters/cursed_ones_archespore_01.png';
+import cursedOnes_archespore02_image from '../../assets/images/monsters/cursed_ones_archespore_02.jpg';
 import cursedOnes_berserker01_image from '../../assets/images/monsters/cursed_ones_berserker_01.png';
 import cursedOnes_berserker02_image from '../../assets/images/monsters/cursed_ones_berserker_02.jpg';
 import cursedOnes_botchling01_image from '../../assets/images/monsters/cursed_ones_botchling_01.png';
@@ -16,10 +18,22 @@ import cursedOnes_ulfhedinn01_image from '../../assets/images/monsters/cursed_on
 import cursedOnes_ulfhedinn02_image from '../../assets/images/monsters/cursed_ones_ulfhedinn_02.png';
 import cursedOnes_werewolf01_image from '../../assets/images/monsters/cursed_ones_werewolf_01.png';
 import cursedOnes_werewolf02_image from '../../assets/images/monsters/cursed_ones_werewolf_02.png';
+import draconids_basilisk01_image from '../../assets/images/monsters/draconids_basilisk_01.png';
+import draconids_basilisk02_image from '../../assets/images/monsters/draconids_basilisk_02.jpeg';
+import draconids_cockatrice01_image from '../../assets/images/monsters/draconids_cockatrice_01.png';
+import draconids_cockatrice02_image from '../../assets/images/monsters/draconids_cockatrice_02.jpg';
+import draconids_forktail01_image from '../../assets/images/monsters/draconids_forktail_01.png';
+import draconids_forktail02_image from '../../assets/images/monsters/draconids_forktail_02.jpg';
+import draconids_royalWyvern01_image from '../../assets/images/monsters/draconids_royal_wyvern_01.png';
+import draconids_royalWyvern02_image from '../../assets/images/monsters/draconids_royal_wyvern_02.jpg';
+import draconids_slyzard01_image from '../../assets/images/monsters/draconids_slyzard_01.png';
+import draconids_slyzard02_image from '../../assets/images/monsters/draconids_slyzard_02.jpg';
+import draconids_wyvern01_image from '../../assets/images/monsters/draconids_wyvern_01.png';
+import draconids_wyvern02_image from '../../assets/images/monsters/draconids_wyvern_02.png';
 
 export const monsters_data = [
     {
-        "id": "Bears",
+        "id": "Bear",
         "name": "Bear",
         "information": [
             "Bears are generally found far from human habitation, either in the high mountains or in the deep woods.",
@@ -48,7 +62,7 @@ export const monsters_data = [
         ]
     },
     {
-        "id": "Dogs",
+        "id": "Dog",
         "name": "Dog",
         "information": [
             "It is fairly common knowledge what a dog is. Generally speaking, a dog would not be a target for a witcher.",
@@ -77,7 +91,7 @@ export const monsters_data = [
         ]
     },
     {
-        "id": "Panthers",
+        "id": "Panther",
         "name": "Panther",
         "information": [
             "Panthers are a type of large cat that primarily live in Toussaint.",
@@ -109,7 +123,7 @@ export const monsters_data = [
         ]
     },
     {
-        "id": "Wild Boars",
+        "id": "Wild Boar",
         "name": "Wild Boar",
         "information": [
             "Wild Boars are dangerous beasts that inhabit the forests in the Northern Realms. The wild boar features prominently in Skellige and Nordling cultures, many of which saw the animal as embodying warrior virtues.",
@@ -145,7 +159,7 @@ export const monsters_data = [
         ]
     },
     {
-        "id": "Wolves",
+        "id": "Wolf",
         "name": "Wolf",
         "information": [
             "Wolves are an aggressive and carnivorous species of wild animal, related to the domesticated dogs found in human settlements. Wolves can be found throughout the mainland and on the Skellige Isles.",
@@ -174,10 +188,39 @@ export const monsters_data = [
         ]
     },
     {
-        "id": "Berserkers",
+        "id": "Archespore",
+        "name": "Archespore",
+        "information": [
+            "Archespores look like gigantic, aesthetically unpleasing flowers with some of the traits of exceptionally cruel and bloodthirsty sundews. ",
+            "Their peculiar appearance makes them practically impossible to discern amidsts other plants. By the time one draws close enough to realize what they are, it is often too late to flee.",
+            "According to popular belief, archespores are cursed plants grown in soil fertilized by the blood of the dying. They are most often found in places which in the past saw pogroms, bloody rituals or cruel murders."
+        ],
+        "quote": [
+            `Looks like a flower to me. A hideous, disgusting flower.`,
+            "– Blasco Tennerbe, last words"
+        ],
+        "tactics": [
+            "Archespores have several deadly techniques. From a distance, they shoot venom that not only causes substantial damage, but also deals additional poison damage after striking. Their pods can explode, releasing an explosive poison that deals extremely high damage.",
+            "The creature will also lunge forward if you get too close. They also have the ability to quickly sink into the ground and sprout from any nearby pods currently on the ground.",
+            "Archespores are extremely vulnerable to fire, which is one of the most effective methods of fighting them."
+        ],
+        "images": [
+            cursedOnes_archespore01_image,
+            cursedOnes_archespore02_image
+        ],
+        "references": [
+            {
+                "id": "1",
+                "reference": "Archespore | Witcher Wiki",
+                "link": "https://witcher.fandom.com/wiki/Archespore"
+            }
+        ]
+    },
+    {
+        "id": "Berserker",
         "name": "Berserker",
         "information": [
-            "Werebears, on Skellige known as berserkers, are therianthropes who transform into bears or half-bears.",
+            "Werebears, also known as Berserkers in the Skellige Isles, are therianthropes who transform into bears or half-bears.",
             `The "arctanthropy" can be acquired either as a result of a curse or inherited from werebear parents. Werebears are exceptionally strong, even tougher and more relentless than real bears.`,
             "Skellige legends speak of men who transform into bears when overwhelmed by battle rage. In doing so, they lose all self-awareness and are driven by a bloodlust which they must satiate in order to return to human form."
         ],
@@ -203,7 +246,7 @@ export const monsters_data = [
         ]
     },
     {
-        "id": "Botchlings",
+        "id": "Botchling",
         "name": "Botchling",
         "information": [
             "A Botchling is a small creature that resembles a highly deformed fetus that preys on pregnant women. It is created from the improper burial of unwanted, stillborn infants.",
@@ -232,7 +275,7 @@ export const monsters_data = [
         ]
     },
     {
-        "id": "Ulfhedinns",
+        "id": "Ulfhedinn",
         "name": "Ulfhedinn",
         "information": [
             "Ulfhedinn is a stronger type of werewolf which can be found in the Skellige Isles.",
@@ -261,7 +304,7 @@ export const monsters_data = [
         ]
     },
     {
-        "id": "Werewolves",
+        "id": "Werewolf",
         "name": "Werewolf",
         "information": [
             "Werewolves are therianthropes who transform into wolves or half-wolves. As other such creatures, they are hardly hurt by steel but very vulnerable to silver.",
@@ -290,6 +333,181 @@ export const monsters_data = [
         ]
     },
     {
+        "id": "Basilisk",
+        "name": "Basilisk",
+        "information": [
+            "Basilisk is a draconid which sometimes terrorizes communities. They have birdlike beaks, webbed wings, hooked talons, and crimson dewlaps.",
+            "Basilisks love dark, damp places such as cellars, caves and city sewers. They hunt by day, waiting patiently in hiding for their prey to come, then jump out in a flash to unleash a deadly attack.",
+            "Basilisk leather is a highly-valued material used to make fashionable shoes and women's handbags. For this reason many men, their courage girded by goldlust, take to hunting them. Most of these hunts end in disaster, but some do manage to bag their prey, which has led to a drastic decline in this creature's numbers in recent years."
+        ],
+        "quote": [
+            `In memory of the noble knight Roderick, slain during a valiant struggle against a basilisk. Let's hope the beast choked on his bones.`,
+            "– Gravestone inscription, Vizima cemetery."
+        ],
+        "tactics": [
+            "Contrary to popular belief, basilisks cannot turn anything to stone with their gaze. That is small comfort, however, given that their acid, venom, claws and teeth provide them many other ways to kill.",
+            "When preparing to fight such a creature one should drink Golden Oriole, which will provide resistance to its venom.",
+            "Basilisks are vulnerable to Igni and any other means of fire. A well timed Dancing Star bomb or burst of Igni can not only bring down a flying basilisk to ground level, but distract the beast from being able to properly defend itself."
+        ],
+        "images": [
+            draconids_basilisk01_image,
+            draconids_basilisk02_image
+        ],
+        "references": [
+            {
+                "id": "1",
+                "reference": "Basilisk | Witcher Wiki",
+                "link": "https://witcher.fandom.com/wiki/Basilisk"
+            }
+        ]
+    },
+    {
+        "id": "Cockatrice",
+        "name": "Cockatrice",
+        "information": [
+            "Cockatrice, also known as a Skoffin and Kurolishek, is an ornithosaur. According to scholars, it's also the only creature to belong to the order of ornithoreptile.",
+            "Foolish superstitions claim cockatrices, like basilisks, can kill with their gaze alone. That is utter nonsense. One should instead watch out for its sharp beak and long tail.",
+            "Cockatrices thrive in dark caves, abandoned ruins, cobwebbed dungeons and old basements. These creatures are capable of killing anyone who stumbles across them in a dark corridor."
+        ],
+        "quote": [
+            `Had meself eight heifers, five of 'em milchers. Then this cockatrice sprung up nearby, and now all's I got left's dried patties in an empty field.`,
+            "– Jethro, peasant from Pindal"
+        ],
+        "tactics": [
+            "A cockatrice effectively combines the speed, flight and ferocity of a Harpy with some of the power and toughness of a Golem.",
+            "Cockatrices do not shun direct fights, in which they strike furiously with wing and tail in an attempt to exhaust their foes. Blows from their beaks are especially dangerous, as they aim with deadly precision at exposed flesh and vital organs and leave bleeding, life-threatening wounds.",
+            "A Witcher should always have the swallow potion ready in order to counteract any wounds sustained."
+        ],
+        "images": [
+            draconids_cockatrice01_image,
+            draconids_cockatrice02_image
+        ],
+        "references": [
+            {
+                "id": "1",
+                "reference": "Cockatrice | Witcher Wiki",
+                "link": "https://witcher.fandom.com/wiki/Cockatrice"
+            }
+        ]
+    },
+    {
+        "id": "Forktail",
+        "name": "Forktail",
+        "information": [
+            "Forktail is a creature related to dragons, but smaller and not intelligent. Just as the name suggests, it can be recognized by its forked tail.",
+            "Forktails owe their quaint name to the long sharp growths at the tip of their tails. A blow from this weapon can slice an oaken shield in two – along with the arm that was carrying it. Thus, though its name conjures images of cutlery, fighting a forktail is nothing like a dinner party and ends in death rather than dessert.",
+            "Forktails are active by day. They usually hunt alone or, more rarely, in pairs. They attack big game, including domesticated animals, mainly cattle and pigs, and even humans from time to time."
+        ],
+        "quote": [
+            `Forktails... Bah! Fuckers' tails're more like cleavers.`,
+            "– Yavinn Buck, veteran of the Mahakaman Volunteer Regiment"
+        ],
+        "tactics": [
+            "A forktail is more than a capable flier, though it can be brought to the ground with Crossbow bolts. They are as aggressive as Wyverns and make use of their foot talons in order to slash and kick at their prey.",
+            "Once the forktail is on the ground, they are somewhat less mobile but still quite dangerous. They turn to other tactics centered around their massive size and spike-covered tails.",
+            "The singers on the tip of their tail are highly poisonous. Because of this the Golden Oriole potion is essential while fighting one."
+        ],
+        "images": [
+            draconids_forktail01_image,
+            draconids_forktail02_image
+        ],
+        "references": [
+            {
+                "id": "1",
+                "reference": "Forktail | Witcher Wiki",
+                "link": "https://witcher.fandom.com/wiki/Forktail"
+            }
+        ]
+    },
+    {
+        "id": "Royal Wyvern",
+        "name": "Royal Wyvern",
+        "information": [
+            "Royal wyvern is a larger and more dangerous breed of wyvern that is highly aggressive and venomous. The creature is particularly terrifying because it has no fear of even throngs of peasants armed with pikes and pitchforks.",
+            "These creatures live in the wilderness, often in the mountains, as they like to build their nests on precipices. They attack any creature entering their territory.",
+            "The female royal wyvern is smaller but more cunning and venomous than her male counterpart. She can be aggressive towards both males and other females. She is a perfect example of how gender relations among humans have their source in the animal world. This is altogether not surprising."
+        ],
+        "quote": [
+            `Most dangerous of all are the royal wyverns. Or, as they're called in some circles, the royal pains in the arse.`,
+            "– Albina Tottelkampf, lecturer in natural sciences at Aretuza"
+        ],
+        "tactics": [
+            "Royal Wyverns have strong resistance to stun attempts and are immune to poison.",
+            "Generally fearless, these creatures are more clever than common wyverns and thus harder to defeat.",
+            "A single blow from a royal wyvern is enough to kill a Witcher, which is why one must avoid its charge at all costs."
+        ],
+        "images": [
+            draconids_royalWyvern01_image,
+            draconids_royalWyvern02_image
+        ],
+        "references": [
+            {
+                "id": "1",
+                "reference": "Royal Wyvern | Witcher Wiki",
+                "link": "https://witcher.fandom.com/wiki/Royal_wyvern"
+            }
+        ]
+    },
+    {
+        "id": "Slyzard",
+        "name": "Slyzard",
+        "information": [
+            "Slyzards, also known as Dracolizards, are a large, grey-colored flying reptile, sometimes as big as a dragon, for which they are sometimes mistaken.",
+            "Slyzards are often mistaken for wyverns or forktails. Yet make no mistake: slyzards are nasty, terribly dangerous beasts, and confusing them for wyverns will end very badly for the confuser. While a wyvern can tear apart and devour an untrained man in seconds, only a slyzard can first bake him to a crisp with a waft of fiery breath.",
+            "It is said that Crinfrid Reavers made sure that all members of this species were killed in Redania."
+        ],
+        "quote": [
+            `Some peasants once offered me a king's ransom to slay a slyzard. A damned hefty purse, chock full o' gold... But I turned 'em down. Coin's no good if you're dead. And a slyzard, that's no fuckin' forktail.`,
+            "– Zator, one of the Crinfrid Reavers"
+        ],
+        "tactics": [
+            "Slyzards are keenly aggressive and attack from both ground and air. Their goal during a fight is to get close enough to their foe to injure it with a breath of fire or knock it down with a sonic blast. Like wyverns, slyzards also attack with venom-spiked tails.",
+            "Slyzards like to disengage mid-fight to fly into the air and plummet down at high speed while spewing out balls of fire.",
+            "Right before these igneous missiles emerge, you can observe a fiery ball forming in the monster's maw. While airborne, a slyzard can also attack with its claws and teeth."
+        ],
+        "images": [
+            draconids_slyzard01_image,
+            draconids_slyzard02_image
+        ],
+        "references": [
+            {
+                "id": "1",
+                "reference": "Slyzard | Witcher Wiki",
+                "link": "https://witcher.fandom.com/wiki/Dracolizard"
+            }
+        ]
+    },
+    {
+        "id": "Wyvern",
+        "name": "Wyvern",
+        "information": [
+            "Wyverns are great flying reptiles with snake-like necks and long tails that end in a venomous trident. Swooping down from the sky, they easily snatch their prey and carry it off to their nest.",
+            "Wyverns are often mistaken for dragons. Though they are much smaller than their more famous kin and do not breathe fire, they are likewise extremely dangerous monsters.",
+            "These creatures are highly adaptable and have been sighted across the entire Continent as well as in the Skellige Isles."
+        ],
+        "quote": [
+            `It were huge. And those teeth, ugh! We barely escaped.
+            Wonder if it killed the traders... Whoresons sure had it coming.`,
+            "– Conversation overheard in Velen"
+        ],
+        "tactics": [
+            "A wyvern will typically attack from the air, attempting to knock its prey down using its wings. After it lands it will attack with its tooth-filled beak in an attempt to draw attention away from its most deadly weapon, the stinger that can be found at the end of its long tail.",
+            "Wyverns are quite venomous. They are able to spit their venom from a distance and even inject it directly into its victim through the stinger. The use of the Golden Oriole potion can prevent it from incapacitating you.",
+            "The Aard sign and the Grapeshot bomb can bring a wyvern to the ground. Once on the ground a wyvern will prefer to strike with the talons on its feet, its teeth and its tail. It is possible to parry the bites, but if unsuccessful the consequences can be deadly."
+        ],
+        "images": [
+            draconids_wyvern01_image,
+            draconids_wyvern02_image
+        ],
+        "references": [
+            {
+                "id": "1",
+                "reference": "Wyvern | Witcher Wiki",
+                "link": "https://witcher.fandom.com/wiki/Wyvern"
+            }
+        ]
+    },
+    {
         "id": "",
         "name": "",
         "information": [
@@ -307,12 +525,13 @@ export const monsters_data = [
             ""
         ],
         "images": [
-            
+            draconids_wyvern01_image,
+            draconids_wyvern02_image
         ],
         "references": [
             {
-                "id": "",
-                "reference": "",
+                "id": "1",
+                "reference": " | Witcher Wiki",
                 "link": ""
             }
         ]
