@@ -46,7 +46,7 @@ const Monster = ({ currentMonster, setMonsterIsBeingDisplayed }) => {
                     {
                         data.references.map(reference => {
                             return <li key={reference.id}>
-                                <a href={reference.link}>
+                                <a href={reference.link} target='_blank' rel='noopener noreferrer'>
                                     <span>{reference.id}.</span> {reference.reference}
                                 </a>
                             </li>

@@ -30,6 +30,18 @@ import draconids_slyzard01_image from '../../assets/images/monsters/draconids_sl
 import draconids_slyzard02_image from '../../assets/images/monsters/draconids_slyzard_02.jpg';
 import draconids_wyvern01_image from '../../assets/images/monsters/draconids_wyvern_01.png';
 import draconids_wyvern02_image from '../../assets/images/monsters/draconids_wyvern_02.png';
+import elementa_djinn01_image from '../../assets/images/monsters/elementa_djinn_01.png';
+import elementa_djinn02_image from '../../assets/images/monsters/elementa_djinn_02.jpg';
+import elementa_earthElemental01_image from '../../assets/images/monsters/elementa_earth_elemental_01.png';
+import elementa_earthElemental02_image from '../../assets/images/monsters/elementa_earth_elemental_02.jpg';
+import elementa_fireElemental01_image from '../../assets/images/monsters/elementa_fire_elemental_01.png';
+import elementa_fireElemental02_image from '../../assets/images/monsters/elementa_fire_elemental_02.jpg';
+import elementa_gargoyle01_image from '../../assets/images/monsters/elementa_gargoyle_01.png';
+import elementa_gargoyle02_image from '../../assets/images/monsters/elementa_gargoyle_02.jpg';
+import elementa_golem01_image from '../../assets/images/monsters/elementa_golem_01.png';
+import elementa_golem02_image from '../../assets/images/monsters/elementa_golem_02.jpg';
+import elementa_iceElemental01_image from '../../assets/images/monsters/elementa_ice_elemental_01.png';
+import elementa_iceElemental02_image from '../../assets/images/monsters/elementa_ice_elemental_02.jpg';
 
 export const monsters_data = [
     {
@@ -508,31 +520,175 @@ export const monsters_data = [
         ]
     },
     {
-        "id": "",
-        "name": "",
+        "id": "Djinn",
+        "name": "Djinn",
         "information": [
-            "",
-            "",
-            ""
+            "Djinn, D'jinni or Djinniah is the name given to an elemental genie of Air.",
+            "Much the same as in fairy tales, djinns are powerful creatures that are capable of great feats. Once captured, they are bound to the captor and have to fulfill three wishes. Following their completion, they are free once more.",
+            "Unusually powerful mages can capture and tame these beings. The mage can then draw on its energy, using it to cast spells without having to call on power from traditional sources. Only a sparse handful have managed this feat, however, for djinns fight to avoid such a fate with stubborn determination."
         ],
         "quote": [
-            ``,
-            "– "
+            `The pitcher emitted a puff of glowing red smoke. The smoke pulsated, then gathered up into an irregular sphere floating in front of the poet's head...`,
+            "– The First Longing, a Tale Fantastic in All Ways"
         ],
         "tactics": [
-            "",
-            "",
-            ""
+            "Fighting a djinn is extraordinarily difficult. They can fling off spells in an instant that the most accomplished human mages could never cast with years of preparation. What's more, by manipulating the element of air they can summon powerful storms, hurricanes, and gales.",
+            "A djinn can teleport short distances to escape harm, even after being affected by Dimeritium bombs. A witcher must be able to quickly react to this and continue to pressure the djinn.",
+            "The closer a djinn is to death or capture, the more dangerous it becomes. The massive area-of-effect spells it can cast come faster, and it may teleport more often the more desperate it becomes."
         ],
         "images": [
-            draconids_wyvern01_image,
-            draconids_wyvern02_image
+            elementa_djinn01_image,
+            elementa_djinn02_image
         ],
         "references": [
             {
                 "id": "1",
-                "reference": " | Witcher Wiki",
-                "link": ""
+                "reference": "Djinn | Witcher Wiki",
+                "link": "https://witcher.fandom.com/wiki/Djinn"
+            }
+        ]
+    },
+    {
+        "id": "Earth Elemental",
+        "name": "Earth Elemental",
+        "information": [
+            "Earth elementals are made of mud, clay, sand and rock dust clumped together with water and brought alive with magic.",
+            "While seemingly slow and ponderous, these creatures are nevertheless dangerous and should be avoided at all costs.",
+            "Earth elementals can withstand a tremendous amount of punishment. Due to their enormous mass they are virtually impossible to knock off balance. They do not bleed nor feel any pain from poison or even fire."
+        ],
+        "quote": [
+            `How to survive an encounter with an earth element? Simple. Run. Fast as you can.`,
+            "– Nino Murk, bounty hunter"
+        ],
+        "tactics": [
+            "Earth elementals are a test of strength and endurance. Even with a silver sword coated in elementa oil, earth elementals can resist impressive amounts of punishment before crumbling, while being able to dish out frighteningly powerful blows with their fists.",
+            "These creatures kill men with astonishing ease – whether by smashing them with their fists or hurling enormous stones at them. Their only weakness is their vulnerability to dimeritium dust.",
+            "If an earth elemental jumps off the ground, move away as quickly as possible. The resulting shockwave knocks down any nearby victims and also creates a ring of rock around the both of you at a certain range, preventing you from escaping or getting too far away from the elemental."
+        ],
+        "images": [
+            elementa_earthElemental01_image,
+            elementa_earthElemental02_image
+        ],
+        "references": [
+            {
+                "id": "1",
+                "reference": "Earth Elemental | Witcher Wiki",
+                "link": "https://witcher.fandom.com/wiki/Earth_Elemental"
+            }
+        ]
+    },
+    {
+        "id": "Fire Elemental",
+        "name": "Fire Elemental",
+        "information": [
+            "Fire is the most destructive of the elements, thus the aggressive lethality of the creature that embodies its essence should come as no surprise.",
+            "Fire elementals are forged in complicated magic rituals for one purpose: destruction. And they pursue this with murderous determination.",
+            "A fire elemental, similarly to post-conjunction creatures, comes from another reality, and our world is alien to it. According to philosophers, it does not have emotions and does not think the way even trolls and other familiar creatures do. Totally controlled by magic, it obediently carries the sorcerer's orders out."
+        ],
+        "quote": [
+            `The first fire elemental was created by Ransant Alvaro. Sadly, flames engulfed his entire laboratory, burning it - along with every other building on his block - to ash.`,
+            `– Tarvix Sandoval, "Origins of Magic Arcana"`
+        ],
+        "tactics": [
+            "Fire elementals can use similar abilities to an earth elemental, with the key difference that fire enhances and empowers them. Being harmed by a fire elemental has effects beyond the immediate harm sustained, since they can light clothes and armor on fire.",
+            "Simply drawing close to a fire elemental is dangerous, due to the intense heat they constantly generate. The flames can be temporarily extinguished by the Aard sign.",
+            "Avoid the Igni sign at all costs, this only empowers a fire elemental and re-ignites its flames. Northern Wind bombs are highly effective, freezing the elemental in place. Dimeritium bombs can prevent it from using certain attacks."
+        ],
+        "images": [
+            elementa_fireElemental01_image,
+            elementa_fireElemental02_image
+        ],
+        "references": [
+            {
+                "id": "1",
+                "reference": "Fire Elemental | Witcher Wiki",
+                "link": "https://witcher.fandom.com/wiki/Fire_Elemental"
+            }
+        ]
+    },
+    {
+        "id": "Gargoyle",
+        "name": "Gargoyle",
+        "information": [
+            "Gargoyles are stone statues brought to life by magic in order to guard mages' laboratories and lairs from intruders.",
+            "Their appearance alone has scared off more than one prospective burglar. Those who do not take fright at the sight of these horned and winged monstrosities usually die shortly thereafter, torn to shreds by stony claws.",
+            "Gargoyles are extremely dangerous opponents. Etched out of granite or marble, they are able to withstand tremendous amounts of damage and exhibit superhuman strength. One blow dealt from their boulder-like fists will crush even a man clad in heavy armor."
+        ],
+        "quote": [
+            `It just me, or is that gargoyle ogling us?`,
+            "– Lara Estevann, burglar from Loc Muinne"
+        ],
+        "tactics": [
+            "A gargoyle is nearly as sturdy as any earth elemental, but significantly faster, more versatile, and seemingly more intelligent. Aard, Axii and Igni are almost entirely useless.",
+            "Yrden can slow a gargoyle down, making it easy to evade their melee attacks, and allow a witcher to strike back. Do not linger in front of the gargoyle for long. They can counter overly aggressive witchers by using their poisonous breath.",
+            "The safety of range is fleeting versus a gargoyle. They can not only throw rocks with a great degree of accuracy and power, but they can leap into the air and crash down atop or next to a witcher with terrifying speed. Both attacks serve to harm and stun victims. A gargoyle can also stomp the ground with such force that they can stun and partially blind nearby threats."
+        ],
+        "images": [
+            elementa_gargoyle01_image,
+            elementa_gargoyle02_image
+        ],
+        "references": [
+            {
+                "id": "1",
+                "reference": "Gargoyle | Witcher Wiki",
+                "link": "https://witcher.fandom.com/wiki/Gargoyle"
+            }
+        ]
+    },
+    {
+        "id": "Golem",
+        "name": "Golem",
+        "information": [
+            "Golems are mindless matter brought to life by a spell. They obey their creator's orders without question.",
+            "Their boundless strength, ability to withstand pain, endless patience and the fact that they don't need one jot of food or drink makes them the best servants or guards anyone could ask for.",
+            "Once provoked, golems will not tire of battle until they have either crushed their opponent or themselves crumbled to dust."
+        ],
+        "quote": [
+            `If you want us to break through this wall, we're gonna need twenty sappers, seven mules and a hundredweight of saltpeter. Or one golem.`,
+            "– Vilmir Brass, foreman at Mount Carbon"
+        ],
+        "tactics": [
+            "Defeating a golem is extraordinarily difficult: for obvious reasons it does not bleed, it feels no fear or mercy and it is invulnerable to fire and poison.",
+            "Golems use no weapons, for they have no need – their fists, weighing over a hundred pounds each, can crush solid granite with one hit. A blow from a golem should thus be avoided at all costs – there is no shield that can stop it, nor sword that can parry it.",
+            "Yrden is useful when going toe-to-toe with a golem, but remember that the golem is merely slowed, not helpless. They can still fight despite Yrden's effects, and can still interrupt a witcher's swordplay with a single crushing blow."
+        ],
+        "images": [
+            elementa_golem01_image,
+            elementa_golem02_image
+        ],
+        "references": [
+            {
+                "id": "1",
+                "reference": "Golem | Witcher Wiki",
+                "link": "https://witcher.fandom.com/wiki/Golem"
+            }
+        ]
+    },
+    {
+        "id": "Ice Elemental",
+        "name": "Ice Elemental",
+        "information": [
+            "An ice elemental is a mass of frozen water animated by magic. Deprived of consciousness or independent will, this elemental is boundlessly obedient to the orders of the mage who created it.",
+            "Gifted with incredible strength, they are completely invulnerable to poison and fire, deprived of sensitive organs, hard as permafrost and all in all incredibly difficult opponents.",
+            "A witcher's only chance at tipping the scales towards victory is to toss a Dimeritium bomb – shrapnel made of this metal interferes with the workings of the spell that gives this creature life."
+        ],
+        "quote": [
+            `I thought to myself - what's a hunk of ice doing in the middle of some lab? And then that hunk of ice got up and broke my legs.`,
+            "– Yannick Lovt, burglar"
+        ],
+        "tactics": [
+            "Ice elementals fight similarly to earth elementals. They can strike with their massive fists, stomp on the ground to knock over their targets, or send a ripple of ice carving through the terrain at their foes.",
+            "As with other elementals, avoid attacking the elemental from the front and dodge its attacks as they cannot be parried. The Yrden sign can be used extensively to slow the creature down."
+        ],
+        "images": [
+            elementa_iceElemental01_image,
+            elementa_iceElemental02_image
+        ],
+        "references": [
+            {
+                "id": "1",
+                "reference": "Ice Elemental | Witcher Wiki",
+                "link": "https://witcher.fandom.com/wiki/Ice_Elemental"
             }
         ]
     }
