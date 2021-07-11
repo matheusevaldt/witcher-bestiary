@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
 
-.header-container {
+header {
     width: 100%;
     text-align: center;
     margin: 40px auto 70px auto;
 }
 
-.header-container h1 {
+header h1 {
     position: relative;
     font-family: 'Sedgwick Ave Display', cursive;
     font-weight: 400;
@@ -15,7 +15,7 @@
     color: #fff;
 }
 
-.header-container h1::before {
+header h1::before {
     position: absolute;
     left: 50%;
     top: -30px;
@@ -27,14 +27,12 @@
     background-position: center center;
     width: 145px;
     height: 145px;
-    /* opacity: 0.6; */
     z-index: -1;
 }
 
-
 @media (min-width: 520px) {
 
-    .header-container {
+    header {
         margin: 60px auto 100px auto;
     }
 

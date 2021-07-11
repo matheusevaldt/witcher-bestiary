@@ -1,0 +1,25 @@
+footer {
+    margin: 15px 0;
+    text-align: right;
+}
+
+footer i {
+    font-size: 2em;
+    color: var(--white-color-with-opacity);
+    transition: color 0.4s ease;
+    cursor: pointer;
+}
+
+footer i:hover,
+footer i:focus {
+    color: #fff;
+}
+
+@media (min-width: 520px) {
+
+    footer {
+        margin: 30px 0;
+        text-align: center;
+    }
+
+}

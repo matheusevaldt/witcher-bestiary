@@ -4,7 +4,7 @@ import './Category.css';
 import Monster from '../Monster/Monster';
 import { monsters_data } from '../Monster/monsters_data.js';
 
-const Category = ({ category, nameCategory, monsters, currentMonster, setCurrentMonster, monsterIsBeingDisplayed, setMonsterIsBeingDisplayed }) => {
+const Category = ({ category, nameCategory, monsters, currentMonster, setCurrentMonster, setMonsterIsBeingDisplayed }) => {
 
     const fetchMonsterData = (event) => {
         const selectedMonster = monsters_data.filter(monster => monster.id === event.target.id);

@@ -1,35 +1,51 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './Monster.css';
 
 const Monster = ({ currentMonster, setMonsterIsBeingDisplayed }) => {
 
     const data = currentMonster[0];
-    useEffect(() => window.scrollTo(0, 0), []);
+    console.log(data);
 
     return (
-        <div className='monster-container'>
+
+        <article className='monster-container'>
+
             <button className='button-homepage' onClick={() => setMonsterIsBeingDisplayed(false)}>&larr; Homepage</button>
-            <div className='monster-header'>
-                <img src={data.images[0]} alt='' />
-                <h1>{data.name}</h1>
-            </div>
-            <div className='monster-information'>
+
+            <figure className='monster-model'>
+                <img src={data.images.model.url} alt='' title={data.images.model.title} />
+                <figcaption>{data.name}</figcaption>
+            </figure>
+            
+            <section className='monster-information'>
+
                 <p>{data.information[0]}</p>
+
                 <figure className='monster-quote'>
                     <blockquote>
-                        {data.quote[0]}
+                        {data.quote.text}
                     </blockquote>
                     <figcaption>
-                        {data.quote[1]}
+                        {data.quote.author}
                     </figcaption>
                 </figure>
+
                 <p>{data.information[1]}</p>
-                <img src={data.images[1]} alt='' />
+
+                <figure className="monster-illustration">
+                    <img src={data.images.illustration.url} alt='' />
+                    <figcaption>
+                        {data.images.illustration.caption}
+                    </figcaption>
+                </figure>
+
                 <p>{data.information[2]}</p>
-            </div>
+
+            </section>
+
             {
                 data.tactics.length !== 0 ?
-                <div className='monster-tactics'>
+                <section className='monster-tactics'>
                     <h1>Combat tactics</h1>
                     {
                         Object.entries(data.tactics).map(tactic => {
@@ -37,10 +53,38 @@ const Monster = ({ currentMonster, setMonsterIsBeingDisplayed }) => {
                             return <p key={key}>{paragraph}</p>
                         })
                     }
-                </div> 
+                </section> 
                 : ''
             }
-            <div className='monster-references'>
+
+            <section className='monster-appearances'>
+                <h1>Appearances</h1>
+                <p>
+                    {data.pluralName} have appeared in the following 
+                    {
+                        data.appearances.filter(appearance => {
+                            if (appearance.hasAppeared) {
+                                return true;
+                            } else {
+                                return false;
+                            }
+                        }).length === 1 ? ' game ' : ' games '
+                    } 
+                    of <strong>CD PROJEKT RED's The Witcher</strong> fantasy series: 
+                </p>
+                <ul>
+                    {
+                        data.appearances.map(appearance => {
+                            if (appearance.hasAppeared) {
+                                return <li key={appearance.id}><span></span>{appearance.game}</li>
+                            }
+                            return null;
+                        })
+                    }
+                </ul>
+            </section>
+
+            <section className='monster-references'>
                 <h1>References</h1>
                 <ul>
                     {
@@ -53,8 +97,9 @@ const Monster = ({ currentMonster, setMonsterIsBeingDisplayed }) => {
                         })
                     }
                 </ul>
-            </div>
-        </div>
+            </section>
+
+        </article>
     );
 
 };

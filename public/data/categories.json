@@ -61,14 +61,16 @@
             "idCategory": "6",
             "nameCategory": "Insectoids",
             "monsters": [
-                "Arachasae", 
-                "Armored Arachasae", 
-                "Endrega Drones", 
-                "Endrega Warriors", 
-                "Giant Centipedes", 
-                "Kikomore", 
-                "Kikomore Workers", 
-                "Venomous Arachasae"
+                "Arachas", 
+                "Arachnomorph",
+                "Armored Arachas", 
+                "Endrega Drone", 
+                "Endrega Warrior", 
+                "Endrega Worker",
+                "Giant Centipede", 
+                "Kikimore Warrior", 
+                "Kikimore Worker", 
+                "Venomous Arachas"
             ]
         },
         {
