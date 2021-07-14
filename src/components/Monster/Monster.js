@@ -70,7 +70,7 @@ const Monster = ({ currentMonster, setMonsterIsBeingDisplayed }) => {
                             }
                         }).length === 1 ? ' game ' : ' games '
                     } 
-                    of <strong>CD PROJEKT RED's The Witcher</strong> fantasy series: 
+                    of <strong>CD PROJEKT RED's The Witcher</strong> franchise: 
                 </p>
                 <ul>
                     {
