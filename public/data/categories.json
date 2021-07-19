@@ -82,7 +82,6 @@
                 "Foglet",
                 "Ghoul",
                 "Grave Hag",
-                "Mucknixer",
                 "Rotfiend",
                 "Water Hag"
             ]
@@ -91,28 +90,28 @@
             "idCategory": "8",
             "nameCategory": "Ogroids",
             "monsters": [
-                "Cyclopses",
-                "Ice Giants",
-                "Ice Trolls",
-                "Nekkers",
-                "Rock Trolls"
+                "Cyclops",
+                "Ice Giant",
+                "Ice Troll",
+                "Nekker",
+                "Rock Troll"
             ]
         },
         {
             "idCategory": "9",
             "nameCategory": "Relicts",
             "monsters": [
-                "Chorts",
-                "Dopplers",
-                "Fiends",
-                "Leshens",
-                "Spriggans"
+                "Chort",
+                "Doppler",
+                "Fiend",
+                "Leshen"
             ]
         },
         {
             "idCategory": "10",
             "nameCategory": "Specters",
             "monsters": [
+                "Barghest",
                 "Hym",
                 "Nightwraith",
                 "Noonwraith", 
@@ -126,6 +125,8 @@
                 "Alp",
                 "Bruxa",
                 "Ekimmara",
+                "Fleder",
+                "Garkain",
                 "Higher Vampire",
                 "Katakan"
             ]

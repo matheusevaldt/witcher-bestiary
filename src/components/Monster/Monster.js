@@ -13,7 +13,15 @@ const Monster = ({ currentMonster, setMonsterIsBeingDisplayed }) => {
             <button className='button-homepage' onClick={() => setMonsterIsBeingDisplayed(false)}>&larr; Homepage</button>
 
             <figure className='monster-model'>
-                <img src={data.images.model.url} alt='' title={data.images.model.title} />
+                <img 
+                    src={data.images.model.url} 
+                    alt='' 
+                    title={data.images.model.title}
+                    style={{
+                        marginTop: data.images.model.styles.marginTop, 
+                        marginBottom: data.images.model.styles.marginBottom
+                    }}
+                />
                 <figcaption>{data.name}</figcaption>
             </figure>
             
@@ -39,7 +47,7 @@ const Monster = ({ currentMonster, setMonsterIsBeingDisplayed }) => {
                     </figcaption>
                 </figure>
 
-                <p>{data.information[2]}</p>
+                { data.information.length === 3 ? <p>{data.information[2]}</p> : '' }
 
             </section>
 
